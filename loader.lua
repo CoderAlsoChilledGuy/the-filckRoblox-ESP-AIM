@@ -21,7 +21,7 @@ frame.Draggable = true
 local box = Instance.new("TextBox", frame)
 box.Size = UDim2.new(1,-20,0,40)
 box.Position = UDim2.new(0,10,0,20)
-box.PlaceholderText = "KEY daxil et"
+box.PlaceholderText = "enter the key"
 box.Text = ""
 box.TextColor3 = Color3.new(1,1,1)
 box.BackgroundColor3 = Color3.fromRGB(50,50,50)
@@ -54,8 +54,8 @@ btn.MouseButton1Click:Connect(function()
 		gui:Destroy()
 		loadstring(game:HttpGet(SCRIPT_URL))()
 	else
-		btn.Text = "YANLIŞ KEY"
+		btn.Text = "wrong"
 		wait(1)
-		btn.Text = "YOXLA"
+		btn.Text = "enter"
 	end
 end)
